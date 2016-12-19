@@ -3,8 +3,7 @@
 
 # TEAM
 
-    Andree Toledo -- CEO -- @AndreeToledo
-    Erick Ibarra  -- CTO -- @erikiado
+    Put your team here
 
 # THANKS
 
@@ -16,6 +15,6 @@
 # TECHNOLOGY COLOPHON
 
     HTML5, CSS3, Bootstrap
-    jQuery, Modernizr
+    jQuery
     Python, Django
     Gunicorn, Nginx
