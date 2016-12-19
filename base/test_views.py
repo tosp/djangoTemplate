@@ -12,16 +12,12 @@ class TestBaseViews(TestCase):
 
     def test_home(self):
         self.browser.visit('http://localhost:8000')
+        test_string = "Hello, world!"
         if self.browser.is_text_present('[tosp]'):
             self.assertTrue(True)
             print("Si entra al home")
         else:
             self.assertTrue(False)
-
-    def test_mantra(self):
-        self.browser.visit('http://localhost:8000')
-        if self.browser.is_text_present('Be Open. Be Source.'):
-            self.assertTrue(True)
 
     def test_robots(self):
         self.browser.visit('http://localhost:8000/robots.txt')
