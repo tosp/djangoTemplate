@@ -1,0 +1,21 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Andree Toledo -- CEO -- @AndreeToledo
+    Erick Ibarra  -- CTO -- @erikiado
+
+# THANKS
+
+    Flying Spaghetti Monster
+    Cthulhu
+    Zeus
+    Chuck Norris
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3, Bootstrap
+    jQuery, Modernizr
+    Python, Django
+    Gunicorn, Nginx
