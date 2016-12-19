@@ -12,8 +12,8 @@ class TestBaseViews(TestCase):
 
     def test_home(self):
         self.browser.visit('http://localhost:8000')
-        test_string = "Hello, world!"
-        if self.browser.is_text_present('[tosp]'):
+        test_string = 'Hello, world!'
+        if self.browser.is_text_present(test_string):
             self.assertTrue(True)
             print("Si entra al home")
         else:
