@@ -1,5 +1,5 @@
 from django.conf.urls import url
-from .views import home, base_files, homeAccess, homeNoAccess
+from .views import home, base_files
 
 urlpatterns = [
     url(r'^$', home, name='home'),
