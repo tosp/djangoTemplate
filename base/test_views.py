@@ -15,9 +15,6 @@ class TestBaseViews(TestCase):
         test_string = 'Hello, world!'
         if self.browser.is_text_present(test_string):
             self.assertTrue(True)
-            print("Si entra al home")
-        else:
-            self.assertTrue(False)
 
     def test_robots(self):
         self.browser.visit('http://localhost:8000/robots.txt')
