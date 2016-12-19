@@ -1,5 +1,15 @@
-body{
-	font-family: Montserrat, Avenir Next, Helvetica, sans-serif;
+body {
+	font-family: Helvetica, sans-serif;
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
+h1 {
+	font-size: 16vw;
+}
+
+h2 {
+	font-size: 8vw;
 }
 
 .nebula {

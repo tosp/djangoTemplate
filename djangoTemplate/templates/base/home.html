@@ -1,65 +1,18 @@
 {% extends "layouts/basic.html" %}
 {% load staticfiles %}
-{% block page_title %}[tosp]{% endblock %}
+{% block page_title %}Awesome Page{% endblock %}
 {% block extra_css %} 
 	<link rel="stylesheet" type="text/css" href={% static "css/base/home.css" %}>
 {% endblock %}
 {% block header %}
-	<div class="nebula">
-		<div class="container padded text-center">
-					<img src="{% static 'images/logos/ruidoColores/tospRuidoColoresBordeNegro.svg' %}" class="img-responsive center-block">
-					<div class="col-xs-10 col-sm-8 col-sm-offset-2 col-xs-offset-1">
-			<h1 class="white">"Be Open. Be Source."</h1>
-		</div>
-		</div>
-	</div>
 {% endblock %}
 
 {% block body_content %}
-	<div class="text-center row little-padding-first">
-		<div class="col-xs-10 col-sm-8 col-sm-offset-2 col-xs-offset-1">
-
-			<h1>What is <b><i>[tosp] &amp; [the tospians]</i></b></h1>
-			<h2 class="very-little-padding">A geek band for the universe</h2>
-		
-			<p><b><i>"[tosp] &amp; [the tospians]"</i></b> is a band of creators. We focus on creating projects, that are fun, exciting, and that challenge us intelectually, but above everything else we ask one question before embarking on a project: </p>
-
-			<h3><i>Is this something really cool that should exist?</i></h3>
-
-			<p>The way we work closely resembles a jazz improv band. We set a list of projects that we want to create over the course of a year. And during that year we work on whatever we feel like doing, with the only caveat being that all projects should be finished before the end of the cycle.</p>
-
-			<h3>This cycle's deadline is Oct. 1, 2017.</h3>
-			<h4>Stay tuned to learn more about our projects.</h4>
-		</div>
-	</div>
-	<div class="text-center row little-padding-last">
-		<div class="row">
-			<div class="col-xs-10 col-sm-8 col-sm-offset-2 col-xs-offset-1">
-				<h1><b><i>[the tospians]</i></b></h1>
-				<p>The people that work in <b><i>[tosp]</i></b> are called <b><i>[the tospians]</i></b> </p>
-				<p>We share a profound love for our careers, creating, and learning.</p>
-				<p>We believe that the ultimate goal of everything we do, is to increase the impact that other people can have in the world. We plan to achieve this, through the democratization of industries.</p>
-			</div>
-		</div>
-		<div class="row very-little-padding">
-			<div class="col-xs-4 col-sm-3 col-lg-2 col-xs-offset-2 col-sm-offset-3 col-lg-offset-4 text-center">
-				<img src="{% static 'images/team/andree.jpg' %}" class="img-responsive center-block img-circle">
-				<h4><b><i>[Andreé Toledo]</i></b></h4>
-			</div>
-			<div class="col-xs-4 col-sm-3 col-lg-2 text-center">
-				<img src="https://avatars3.githubusercontent.com/u/2940899?v=3&s=466" class="img-responsive center-block img-circle">
-				<h4><b><i>[Erikiado]</i></b></h4>
-			</div>
-		</div>
-		
-	</div>
+<div class='row text-center'>
+	<h1>Hello, world!</h1>
+	<h2>Now get to work...</h2>
+</div>
 {% endblock %}
 
 {% block footer_content %}
-	<div class="text-center very-little-padding row">
-		<div class="col-xs-10 col-sm-8 col-sm-offset-2 col-xs-offset-1">
-			<h1><i>"Gentlemen, you can't fight in here! This is the War Room!"</i></h1>
-			<h2>President Merkin Muffley</h2>
-		</div>
-	</div>
 {% endblock %}
