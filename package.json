@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AndreeToledo/tospHome.git"
+    "url": ""
   },
   "author": "[tosp]",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/AndreeToledo/tospHome/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/AndreeToledo/tospHome#readme"
+  "homepage": ""
 }

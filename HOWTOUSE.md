@@ -1,8 +1,6 @@
 # djangoTemplate
 How to use the template
 
-[![Build Status](https://travis-ci.org/tosp/tospHome.svg?branch=master)](https://travis-ci.org/tosp/tospHome)
-
 ## System Requirements
 
 * [Python 3.5](https://www.python.org/downloads/)
@@ -28,7 +26,7 @@ $ virtualenv --python='PATH TO PYTHON 3.5' /path/to/your/venv/NAME_OF_YOUR_ENV
 We use environment variables to separate sensitive information and keys from the code, you should set the following ones.
 
 ```bash
-DJANGO_SETTINGS_MODULE='tospHome.settings.development' //The last part depends on the environment you are on
+DJANGO_SETTINGS_MODULE='djangoTemplate.settings.development' //The last part depends on the environment you are on
 SECRET_KEY='Generate one here. (http://www.miniwebtool.com/django-secret-key-generator/)'
 DB_NAME
 DB_USER

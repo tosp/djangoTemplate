@@ -5,7 +5,10 @@ import os
 import sys
 
 
-filesToEdit = ['djangoTemplate/wsgi.py',
+filesToEdit = ['HOWTOUSE.md',
+               'djangoTemplate,manage.py',
+               'djangoTemplate/urls.py',
+               'djangoTemplate/wsgi.py',
                'djangoTemplate/settings/base.py']
 
 with fileinput.FileInput(filesToEdit, inplace=True) as file:
