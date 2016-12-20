@@ -6,7 +6,7 @@ import sys
 
 
 filesToEdit = ['HOWTOUSE.md',
-               'djangoTemplate,manage.py',
+               'djangoTemplate/manage.py',
                'djangoTemplate/urls.py',
                'djangoTemplate/wsgi.py',
                'djangoTemplate/settings/base.py']
