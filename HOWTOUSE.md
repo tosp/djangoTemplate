@@ -35,6 +35,15 @@ DB_HOST
 DB_PORT
 ```
 
+The template also uses python-social-auth, in order to allow users to log in with Facebook, and Google. You will need to get your app key from them, and then set the following environment variables.
+
+```
+GOOGLE_KEY
+GOOGLE_SECRET
+FACEBOOK_KEY
+FACEBOOK_SECRET
+```
+
 In order to set them in your virtualenv just go to `/path/to/your/venv/NAME_OF_YOUR_ENV/bin/activate` and in the section for deactivate add at the end
 
 ```bash
