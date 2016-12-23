@@ -7,6 +7,25 @@ How to use the template
 * [PostgreSQL 9.5+](https://wiki.postgresql.org/wiki/Detailed_installation_guides)
 * [Node 4+](https://docs.npmjs.com/getting-started/installing-node)
 
+## Database Setup
+
+After downloading (https://www.postgresql.org/download/) and installing PostgreSQL, you should be able to switch to the postgres user on your system and start a session in the postgresql interpreter.
+
+```bash
+$ su postgres
+
+$ psql
+```
+
+Next, we will create a database and an admin user for our project. Later on we will use this information to setup the database on our project and to activate it through our virtual environments.
+```sql
+CREATE DATABASE project_name_db;
+CREATE ROLE project_db_admin WITH LOGIN PASSWORD 'db_admin_password';
+GRANT ALL PRIVILEGES ON DATABASE project_name_db TO project_db_admin;
+ALTER USER project_db_admin CREATEDB;
+```
+
+
 ## Virtual Environments
 
 You will need to create a virtual environment in order to isolate all the packages that are required for the project. We provide instructions on how to do it with [`virtualenv`](https://virtualenv.pypa.io/en/stable/)
@@ -26,13 +45,13 @@ $ virtualenv --python='PATH TO PYTHON 3.5' /path/to/your/venv/NAME_OF_YOUR_ENV
 We use environment variables to separate sensitive information and keys from the code, you should set the following ones.
 
 ```bash
-DJANGO_SETTINGS_MODULE='djangoTemplate.settings.development' //The last part depends on the environment you are on
+DJANGO_SETTINGS_MODULE='djangoTemplate.settings.development' // The last part depends on the environment you are on
 SECRET_KEY='Generate one here. (http://www.miniwebtool.com/django-secret-key-generator/)'
-DB_NAME
-DB_USER
-DB_PASSWORD
-DB_HOST
-DB_PORT
+DB_NAME='project_name_db' // From Database Setup
+DB_USER='project_user_admin'
+DB_PASSWORD='db_admin_password'
+DB_HOST='you.rho.stn.ame' // For local development 127.0.0.1 or localhost
+DB_PORT=''
 ```
 
 In order to set them in your virtualenv just go to `/path/to/your/venv/NAME_OF_YOUR_ENV/bin/activate` and in the section for deactivate add at the end
@@ -66,6 +85,11 @@ $ pip install -r requirements/development.txt
 Then install the npm required with
 ```bash
 $ npm install
+```
+## Running the namechanger
+
+```bash
+$ python nameChanger.py project_name
 ```
 
 ## Running the project
