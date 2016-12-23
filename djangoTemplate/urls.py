@@ -18,5 +18,7 @@ from django.contrib import admin
 
 urlpatterns = [
     url('', include('base.urls')),
+    url('', include('social.apps.django_app.urls', namespace='social')),
     url(r'^admin/', admin.site.urls),
+    url(r'^tosp_auth/', include('tosp_auth.urls'))
 ]
