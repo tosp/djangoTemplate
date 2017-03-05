@@ -1,5 +1,8 @@
-Django==1.10.2
-flake8==3.0.4
+Django==1.10.6
+flake8==3.3.0
+numpydoc==0.6.0
 pep8-naming==0.4.1
-psycopg2==2.6.2
-python-social-auth==0.2.21
+psycopg2==2.7
+social-auth-app-django==1.1.0
+Sphinx==1.5.2
+sphinx-rtd-theme==0.1.9
