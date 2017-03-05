@@ -19,7 +19,7 @@ services:
   - postgresql
 
 before_install:
-  - wget http://chromedriver.storage.googleapis.com/2.26/chromedriver_linux64.zip
+  - wget http://chromedriver.storage.googleapis.com/2.27/chromedriver_linux64.zip
   - unzip chromedriver_linux64.zip
   - sudo chmod u+x chromedriver
   - sudo mv chromedriver /usr/bin/
@@ -35,10 +35,9 @@ before_script:
   - psql -c 'create database travis_ci_test;' -U postgres
   - "export DISPLAY=:99.0"
   - "sh -e /etc/init.d/xvfb start"
-  - sleep 3 # give xvfb some time to start
+  - sleep 5 # give xvfb some time to start
   - flake8
   - python manage.py migrate
-  - python manage.py runserver &
 
 script:
   - coverage run --source="." manage.py test
