@@ -4,5 +4,6 @@ exclude =
     __pycache__,
     */settings/*,
     */migrations/*,
-   	./manage.py
+   	./manage.py,
+   	docs/conf.py
 max-line-length=99
