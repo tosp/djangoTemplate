@@ -38,6 +38,16 @@ import django
 sys.path.insert(0, os.path.abspath('../'))
 
 os.environ['DJANGO_SETTINGS_MODULE'] = 'djangoTemplate.settings.development'
+os.environ['SECRET_KEY'] = '1'
+os.environ['DB_NAME'] = '1'
+os.environ['DB_USER'] = '1'
+os.environ['DB_PASSWORD'] = '1'
+os.environ['DB_HOST'] = '1'
+os.environ['DB_PORT'] = '1'
+os.environ['GOOGLE_KEY'] = '1'
+os.environ['GOOGLE_SECRET'] = '1'
+os.environ['FACEBOOK_KEY'] = '1'
+os.environ['FACEBOOK_SECRET'] = '1'
 django.setup()
 
 extensions = ['sphinx.ext.autodoc',
