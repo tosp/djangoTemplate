@@ -48,6 +48,7 @@ os.environ['GOOGLE_KEY'] = '1'
 os.environ['GOOGLE_SECRET'] = '1'
 os.environ['FACEBOOK_KEY'] = '1'
 os.environ['FACEBOOK_SECRET'] = '1'
+
 django.setup()
 
 extensions = ['sphinx.ext.autodoc',
@@ -177,7 +178,7 @@ man_pages = [
 #  dir menu entry, description, category)
 texinfo_documents = [
     (master_doc, 'django_template', 'django_template Documentation',
-     author, 'django_template', 'One line description of project.',
+     author, 'django_template', 'Boilerplate for future [tosp] projects.',
      'Miscellaneous'),
 ]
 
