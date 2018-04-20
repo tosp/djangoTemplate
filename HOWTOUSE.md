@@ -30,16 +30,16 @@ ALTER USER project_db_admin CREATEDB;
 
 You will need to create a virtual environment in order to isolate all the packages that are required for the project. We provide instructions on how to do it with [`virtualenv`](https://virtualenv.pypa.io/en/stable/)
 
-First find the path to your `python 3.5` installation by running
+First find the path to your `python 3.6` installation by running
 
 ```bash
-$ which python3.5
-PATH TO PYTHON 3.5
+$ which python3.6
+PATH TO PYTHON 3.6
 ```
 
 Then create the virtual environment like this. (We use different virtualenvironments for different functions, such as testing, development, production, and CI, each of them has different requirements, you should at least create an environment for development and one for testing.)
 ```bash
-$ virtualenv --python='PATH TO PYTHON 3.5' /path/to/your/venv/NAME_OF_YOUR_ENV
+$ virtualenv --python='PATH TO PYTHON 3.6' /path/to/your/venv/NAME_OF_YOUR_ENV
 ```
 
 We use environment variables to separate sensitive information and keys from the code, you should set the following ones.
